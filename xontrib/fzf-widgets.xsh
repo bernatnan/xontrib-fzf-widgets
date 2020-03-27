@@ -50,7 +50,7 @@ def custom_keybindings(shortcut, history, completer, bindings, **kw):
 
         key = ${...}.get(key_name)
         if key:
-            return bindings.registry.add_binding(key)
+            return bindings.add(key)
         return do_nothing
 
     @handler('fzf_history_binding')
